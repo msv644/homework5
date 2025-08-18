@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </header>
+    <form action="/submit-data" method="post" class="form">
+        <fieldset>
+            <legend class="form-name"><b>Personal information</b></legend>
+            <div>
+                <div class="form-content">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                </div>
+
+                <div class="form-content">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email">
+                </div>
+
+                <div class="form-content">
+                    <label for="session">Type of Session</label>
+                    <input type="radio" id="session" name="session" value="Family"> Family
+                    <input type="radio" name="session" value="Engagement"> Engagement
+                    <input type="radio" name="session" value="Lifestyle"> Lifestyle
+                    <input type="radio" name="session" value="Event"> Event
+                </div>
+
+                <div class="form-content">
+                    <label for="date">Select desired date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="form-content">
+                    <label for="phone">Your phone</label>
+                    <input type="number" id="phone" name="phone">
+                </div>
+
+                <div class="form-content">
+                    <label for="personal-info">More about you</label>
+                    <textarea name="personal-info" id="personal-info" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <button name="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+
+
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
